@@ -1,0 +1,171 @@
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+}
+
+/* Header SECTION  */
+header {
+	background: #333;
+	color: #fff;
+	padding: 1rem 0;
+}
+
+header .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 2rem;
+}
+
+header h1 {
+	margin: 0;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	margin-left: 2rem;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+section {
+	padding: 4rem 2rem;
+}
+
+/* Home SECTION  */
+section#home {
+	background: #007bff;
+	color: #fff;
+	text-align: center;
+	padding-top: 8rem;
+	padding-bottom: 8rem;
+}
+
+section#home h2 {
+	font-size: 3rem;
+}
+
+section#home h3 {
+	font-size: 2rem;
+}
+
+section#home p {
+	font-size: 1.2rem;
+	margin-top: 1rem;
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.social-links {
+	margin-top: 1rem;
+}
+
+.social-links a {
+	margin: 0 0.5rem;
+	color: #fff;
+	/* Adjust color as needed */
+	font-size: 32px;
+	transition: color 0.3s;
+}
+
+.social-links a:hover {
+	color: #007bff;
+	/* Adjust hover color as needed */
+}
+
+/* .social-links img {
+	width: 32px;
+	height: 32px;
+} */
+
+
+/* About SECTION  */
+section#about .container {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+}
+
+.about-content {
+	display: flex;
+	align-items: center;
+}
+
+.about-content img {
+	width: 300px;
+	border-radius: 10px;
+	margin-right: 2rem;
+}
+
+.about-text {
+	max-width: 600px;
+}
+
+.about-text h3 {
+	font-size: 1.8rem;
+	margin-bottom: 1rem;
+}
+
+.about-text p {
+	margin-bottom: 1rem;
+}
+
+.about-text ul {
+	list-style: none;
+	padding: 0;
+	margin-bottom: 1rem;
+}
+
+.about-text ul li {
+	margin-bottom: 0.5rem;
+}
+
+.download-btn {
+	background: #007bff;
+	color: #fff;
+	padding: 0.8rem 1.5rem;
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+/* Service SECTION  */
+section#service .container {
+	text-align: center;
+}
+
+.hire-btn {
+	background: #007bff;
+	color: #fff;
+	padding: 0.8rem 1.5rem;
+	text-decoration: none;
+	border-radius: 5px;
+	display: inline-block;
+	margin-top: 1rem;
+}
+
+/* Footer SECTION  */
+
+footer {
+	background: #333;
+	color: #fff;
+	text-align: center;
+	padding: 1rem 0;
+}
+
+footer .container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
