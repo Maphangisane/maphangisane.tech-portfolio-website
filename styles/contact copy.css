@@ -1,0 +1,149 @@
+#contact {
+	background: #fafafa;
+	padding: 60px 0;
+}
+
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.section_heading {
+	margin-bottom: 60px;
+}
+
+.section_heading h2 {
+	font-size: 36px;
+	color: #333;
+	margin: 10px 0 20px;
+}
+
+.section_heading p {
+	color: #777;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+.section_heading .sm_border {
+	width: 60px;
+	height: 3px;
+	background: #1461ff;
+	margin: 20px auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+/* Common styles for .form-control and .form-group */
+.form-group {
+	margin-bottom: 1.5rem;
+}
+
+.form-control {
+	display: block;
+	width: 100%;
+	height: 40px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.form-control:focus {
+	border-color: #1461ff;
+	outline: none;
+}
+
+/* Specific styles for contact form */
+#contact-form .form-group textarea {
+	height: auto;
+}
+
+/* Button style */
+#submitButton {
+	width: 100%;
+	height: 40px;
+	background: #1461ff;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+#submitButton:hover {
+	background: #0d47a1;
+}
+
+/* Contact widget area styles */
+.contact_widget_area {
+	margin-left: 30px;
+	background: #fff;
+	box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+	padding: 30px;
+}
+
+.contact_info {
+	display: flex;
+	align-items: flex-start;
+	padding: 30px 0;
+}
+
+.contact_info i {
+	font-size: 30px;
+	color: #1461ff;
+	margin-right: 25px;
+}
+
+.contact_info h5 {
+	font-size: 16px;
+	font-weight: 600;
+	color: #222;
+	margin: 0 0 10px;
+}
+
+.contact_info p {
+	margin: 0;
+	padding-left: 53px;
+	color: #555;
+}
+
+/* Responsive */
+[class*="col-"] {
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+	.col-sm-12 {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	.col-md-12 {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.col-md-7 {
+		flex: 0 0 58.333333%;
+		max-width: 58.333333%;
+	}
+
+	.col-md-5 {
+		flex: 0 0 41.666667%;
+		max-width: 41.666667%;
+	}
+}
