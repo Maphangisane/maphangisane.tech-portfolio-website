@@ -1,0 +1,65 @@
+/* About SECTION  */
+section#about .container {
+	/* max-width: 1200px; */
+	margin: 0 auto;
+	background-color: red;
+
+	/* height: 70vh; */
+
+	padding-bottom: 2rem;
+}
+
+.about-content {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.about-content img {
+	width: 400px;
+	border-radius: 10px;
+	margin: 2rem;
+}
+
+.about-text {
+	max-width: 800px;
+	/* max-width: 400px; */
+	/* padding: 50px; */
+}
+
+.about-text h3 {
+	font-size: 1.8rem;
+	margin-bottom: 1rem;
+}
+
+.about-text p {
+	margin-bottom: 1rem;
+}
+
+.about-text ul {
+	list-style: none;
+	padding: 0;
+	margin-bottom: 1rem;
+	display: inline-flex;
+	justify-content: space-around;
+}
+
+.about-text ul li {
+	margin-bottom: 0.5rem;
+	display: flex;
+	align-items: center;
+}
+
+.about-text ul li i {
+	margin-right: 1rem;
+	font-size: 1.2rem;
+}
+
+.download-btn {
+	background: #007bff;
+	color: #fff;
+	padding: 0.8rem 1.5rem;
+	text-decoration: none;
+	border-radius: 5px;
+	/* border: .2rem solid var(--bg-color); */
+}

@@ -1,0 +1,40 @@
+/* CTA SECTION  */
+section#CTA .container {
+	text-align: center;
+	/* background: #007bff; */
+}
+
+.cta_section {
+	background: url(../images/img8.jpg);
+	position: relative;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.cta_section:before {
+	position: absolute;
+	content: "";
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: -webkit-linear-gradient(-45deg, rgba(88, 195, 255, .8) 0, rgba(0, 77, 230, .8) 40%, rgba(0, 59, 177, .8) 100%);
+}
+
+.cta_section h2 {
+	background: #007bff;
+	color: #fff;
+	font-size: 30px;
+	margin-top: 0;
+	margin-bottom: 35px;
+}
+
+.hire-btn {
+	background: #007bff;
+	color: #fff;
+	padding: 0.8rem 1.5rem;
+	text-decoration: none;
+	border-radius: 5px;
+	display: inline-block;
+	margin-top: 1rem;
+}

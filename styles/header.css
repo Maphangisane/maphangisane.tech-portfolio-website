@@ -1,0 +1,146 @@
+/* Header SECTION  */
+header {
+	background: transparent;
+	color: #fff;
+	padding: 1rem 0;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	z-index: 1000;
+}
+
+header .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 2rem;
+}
+
+header h1 {
+	font-size: 30px;
+	font-weight: 800;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #000;
+	font-family: 'Raleway', sans-serif;
+}
+
+/* sticky navbar */
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: #fff;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	z-index: 1000;
+}
+
+.sticky a {
+	color: #000;
+}
+
+.navbar-transparent {
+	/* background: transparent; */
+	color: #000;
+	transition: background-color 0.5s ease-in-out;
+}
+
+.navbar-transparent a {
+	color: #fff;
+}
+
+.navbar-transparent.sticky a {
+	color: #000;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	margin-left: 2rem;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Home SECTION  */
+section#home {
+	background-image:
+		linear-gradient(to right, #007bff, rgba(0, 0, 0, 0.2)),
+		url('../images/img1.jpg');
+	background-position: center right;
+	background-repeat: no-repeat;
+	background-size: none;
+	color: #fff;
+	text-align: left;
+	padding-top: 8rem;
+	padding-bottom: 8rem;
+	padding-left: 10rem;
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+}
+
+/* section#home h2 {
+	font-size: 3rem;
+	color: #1461ff;
+	font-size: 30px;
+	background: #fff;
+	padding: 4px 18px;
+	border-radius: 5px;
+	max-width: 150px;
+} */
+
+.home-content {
+	margin-top: 100px;
+}
+
+.home-content strong {
+	color: #1461ff;
+	font-size: 30px;
+	background: #fff;
+	padding: 4px 18px;
+	border-radius: 5px;
+}
+
+.home-content h3 {
+	font-size: 2rem;
+	padding: 13px 0;
+}
+
+section#home p {
+	font-size: 1.2rem;
+	margin-top: 1rem;
+	max-width: 600px;
+	/* margin-left: auto;
+	margin-right: auto; */
+}
+
+.social-links {
+	margin-top: 1rem;
+}
+
+.social-links a {
+	margin: 0 0.5rem;
+	color: #fff;
+	font-size: 32px;
+	transition: color 0.3s;
+}
+
+.social-links a:hover {
+	/* color: #007bff; */
+	background: #fff;
+	border-color: #fff;
+	color: #1461ff;
+}
+
+/*  */
