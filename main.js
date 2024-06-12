@@ -1,23 +1,4 @@
-// JavaScript function to scroll the slider
-function scrollSlider(direction) {
-  const slider = document.querySelector(".slider");
-  const slideWidth = document.querySelector(".slide").clientWidth;
-  const scrollAmount = slideWidth * direction;
-  slider.style.transform = `translateX(-${scrollAmount}px)`;
-}
-
-// JavaScript function to enlarge an image
-function enlargeImage(src, description) {
-  document.getElementById("enlarged-image").src = src;
-  document.getElementById("image-description").textContent = description;
-  document.getElementById("enlarged-container").style.display = "flex";
-}
-
-// JavaScript function to close the enlarged image
-function closeImage() {
-  document.getElementById("enlarged-container").style.display = "none";
-}
-
+// functions to show and hide the navbar
 window.onscroll = function () {
   scrollFunction();
 };
@@ -30,6 +11,7 @@ function scrollFunction() {
   }
 }
 
+//  function to enlarge an image
 function enlargeBox(element) {
   element.classList.add("enlarged");
   const portfolioLayer = element.querySelector(".portfolio-layer");
@@ -38,6 +20,7 @@ function enlargeBox(element) {
   enlargedContent.style.display = "flex";
 }
 
+//  function to close the enlarged image
 function closeBox(event, button) {
   event.stopPropagation();
   const box = button.closest(".portfolio-box");
