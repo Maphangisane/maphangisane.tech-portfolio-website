@@ -34,11 +34,16 @@ header h1 {
 	top: 0;
 	width: 100%;
 	background-color: #fff;
+	color: #000;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 	z-index: 1000;
 }
 
 .sticky a {
+	color: #000;
+}
+
+.sticky h1 {
 	color: #000;
 }
 
