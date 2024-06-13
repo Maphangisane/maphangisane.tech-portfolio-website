@@ -4,11 +4,11 @@
 @import url("./styles/header.css");
 @import url("./styles//about.css");
 @import url("./styles/portfolio.css");
-@import url("./styles/service.css");
 @import url("./styles/cta.css");
 @import url("./styles/contact.css");
 @import url("./styles/footer.css");
-@import url("./styles/slider.css");
+/* @import url("./styles/slider.css");
+@import url("./styles/service.css"); */
 
 /* CSS Variables */
 :root {
@@ -16,7 +16,7 @@
 	/* colors */
 	--primary-color: #1461FF;
 	/* --secondary-color:  #ACC7FF; */
-	--secondary-color: #41c025;
+	--secondary-color: ##f4f4f4;
 	--bg-color: #FFFFFF;
 	--text-color: #222222;
 	--text-color2: #FFFFFF;
@@ -92,7 +92,7 @@ a:hover {
 }
 
 section {
-	padding: 4rem 2rem;
+	padding: 0.8rem 2rem;
 }
 
 .section-title {
@@ -113,6 +113,14 @@ section {
 	border-radius: 10px;
 	padding: 5px 10px;
 	color: #000;
+}
+
+strong {
+	color: #1461ff;
+	font-size: 30px;
+	background: #fff;
+	padding: 4px 18px;
+	border-radius: 5px;
 }
 
 /* Start Section-Padding */

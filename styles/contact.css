@@ -1,7 +1,8 @@
 .contact {
-	padding: 50px;
-	/* background-color: #f4f4f4; */
-	background-color: greenyellow;
+	/* padding: 30px; */
+	/* margin: 0 auto; */
+	background-color: #f4f4f4;
+	/* background-color: greenyellow; */
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -20,17 +21,22 @@
 	justify-content: space-between;
 	margin-top: 20px;
 	width: 100%;
+	align-items: center;
 }
 
 .contact-info {
-	/* border-right: 1px solid #1461ff; */
-	/* padding-right: 20px; */
-	padding: 50px;
-	/* padding-top: 30px; */
-	/* margin-left: 30px; */
+	display: flex;
+	flex-direction: column;
+	/* align-items: stretch; */
+	font-size: medium;
 	width: 40%;
 	border: #1461ff;
-	background: aliceblue;
+	/* background: rgb(243, 244, 247); */
+	border: 1px solid rgb(243, 244, 247);
+	border-radius: 40px;
+	flex-wrap: wrap;
+	align-content: space-around;
+	justify-content: space-evenly;
 }
 
 .contact-info div {

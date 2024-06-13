@@ -15,7 +15,7 @@ header .container {
 	align-items: center;
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 0 2rem;
+	padding: 0 3rem;
 }
 
 header h1 {
@@ -23,7 +23,7 @@ header h1 {
 	font-weight: 800;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	color: #000;
+	color: #fff;
 	font-family: 'Raleway', sans-serif;
 }
 
@@ -54,6 +54,8 @@ header h1 {
 
 .navbar-transparent.sticky a {
 	color: #000;
+	font-size: medium;
+	font-weight: 700;
 }
 
 nav ul {
@@ -70,6 +72,8 @@ nav li {
 nav a {
 	color: #fff;
 	text-decoration: none;
+	font-weight: 700;
+	font-size: medium;
 }
 
 /* Home SECTION  */
@@ -106,21 +110,39 @@ section#home {
 
 .home-content strong {
 	color: #1461ff;
-	font-size: 30px;
+	font-size: 40px;
 	background: #fff;
+	padding: 5px 18px;
+	border-radius: 5px;
+}
+
+.home-content span {
+	color: #fff;
+	font-size: 30px;
+	background: #1461ff;
 	padding: 4px 18px;
 	border-radius: 5px;
 }
 
+.home-content h1 {
+	font-size: 5rem;
+	padding: 1rem 0;
+	/* background: #1461ff; */
+	color: #fff;
+}
+
 .home-content h3 {
-	font-size: 2rem;
-	padding: 13px 0;
+	font-size: 2.5rem;
+	padding: 1rem 0;
+	/* background: #1461ff; */
+	color: #fff;
 }
 
 section#home p {
 	font-size: 1.2rem;
 	margin-top: 1rem;
 	max-width: 600px;
+	color: #1461ff;
 	/* margin-left: auto;
 	margin-right: auto; */
 }
