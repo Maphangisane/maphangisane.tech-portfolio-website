@@ -74,12 +74,54 @@ nav li {
 	margin-left: 2rem;
 }
 
+
 nav a {
 	color: #fff;
 	text-decoration: none;
 	font-weight: 700;
 	font-size: medium;
+	position: relative;
+	transition: color 0.3s;
 }
+
+nav a.active {
+	color: #007bff;
+}
+
+nav a::after {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 2px;
+	display: block;
+	margin-top: 5px;
+	right: 0;
+	background: #007bff;
+	transition: width 0.3s ease, right 0.3s ease;
+}
+
+nav a:hover::after {
+	width: 100%;
+	right: 0;
+}
+
+.sticky nav a {
+	color: #000;
+}
+
+.sticky nav a.active {
+	color: #007bff;
+}
+
+.sticky nav a::after {
+	background: #007bff;
+}
+
+.sticky nav a:hover::after {
+	width: 100%;
+	right: 0;
+}
+
 
 /* Home SECTION  */
 section#home {
