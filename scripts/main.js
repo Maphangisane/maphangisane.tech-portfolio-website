@@ -1,28 +1,29 @@
 // Function for Active Link Highlighting and Sticky Navbar
 document.addEventListener("DOMContentLoaded", function () {
-  // Get all links in the navbar
-  var links = document.querySelectorAll("nav a");
+  var sections = document.querySelectorAll("section");
+  var navLinks = document.querySelectorAll("nav a");
 
-  // Loop through each link
-  links.forEach(function (link) {
-    // Check if the link's href matches the current page URL
-    if (link.href === window.location.href) {
-      link.classList.add("active");
+  function changeActiveLink() {
+    let index = sections.length;
+
+    while (
+      --index &&
+      window.scrollY + window.innerHeight / 2 < sections[index].offsetTop
+    ) {}
+
+    navLinks.forEach((link) => link.classList.remove("active"));
+
+    // Check if the section has a corresponding nav link
+    const activeSectionId = sections[index].id;
+    const activeLink = document.querySelector(
+      `nav a[href="#${activeSectionId}"]`
+    );
+    if (activeLink) {
+      activeLink.classList.add("active");
     }
+  }
 
-    // Add event listener for click to update the active class
-    link.addEventListener("click", function () {
-      // Remove the active class from all links
-      links.forEach(function (link) {
-        link.classList.remove("active");
-      });
-
-      // Add the active class to the clicked link
-      link.classList.add("active");
-    });
-  });
-
-  // Sticky Navbar
+  changeActiveLink();
   window.addEventListener("scroll", function () {
     var navbar = document.getElementById("navbar");
     if (window.scrollY > 50) {
@@ -30,6 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       navbar.classList.remove("sticky");
     }
+    changeActiveLink();
   });
 });
 
