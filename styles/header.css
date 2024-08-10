@@ -27,6 +27,18 @@ header h1 {
 	font-family: 'Raleway', sans-serif;
 }
 
+/* Hamburger Menu Styles */
+.hamburger {
+	display: none;
+	background: none;
+	border: none;
+	color: #fff;
+	font-size: 24px;
+	cursor: pointer;
+	position: relative;
+	z-index: 2000;
+}
+
 /* sticky navbar */
 
 .sticky {
@@ -122,6 +134,41 @@ nav a:hover::after {
 	right: 0;
 }
 
+/* Mobile Styles */
+
+@media (max-width: 768px) {
+	.hamburger {
+		display: block;
+	}
+
+	nav {
+		display: none;
+		position: absolute;
+		top: 60px;
+		right: 0;
+		background: #fff;
+		color: #000;
+		width: 100%;
+		text-align: center;
+	}
+
+	nav.active {
+		display: block;
+	}
+
+	nav ul {
+		flex-direction: column;
+		padding: 1rem 0;
+	}
+
+	nav li {
+		margin: 0.5rem 0;
+	}
+
+	nav a {
+		color: #000;
+	}
+}
 
 /* Home SECTION  */
 section#home {
@@ -188,7 +235,7 @@ section#home {
 section#home p {
 	font-size: 1.2rem;
 	margin-top: 1rem;
-	max-width: 600px;
+	/* max-width: 600px; */
 	color: #fff;
 	/* margin-left: auto;
 	margin-right: auto; */
@@ -211,5 +258,50 @@ section#home p {
 	border-color: #fff;
 	color: #1461ff;
 }
+
+/* Mobile Styles for Home Section */
+@media (max-width: 768px) {
+	section#home {
+		padding-left: 2rem;
+		text-align: center;
+		background-image:
+			linear-gradient(to right, #007bff, rgba(0, 0, 0, 0.2));
+	}
+
+	.home-content {
+		margin-top: 2rem;
+	}
+
+	.home-content strong {
+		color: #1461ff;
+		font-size: 30px;
+		background: #fff;
+		padding: 3px 12px;
+		border-radius: 4px;
+	}
+
+	.home-content span {
+		color: #fff;
+		font-size: 20px;
+		background: #1461ff;
+		padding: 3px 12px;
+		border-radius: 4px;
+	}
+
+	.home-content h1 {
+		font-size: 3rem;
+		padding: 0.5rem 0;
+	}
+
+	.home-content h3 {
+		font-size: 1.5rem;
+		padding: 0.5rem 0;
+	}
+
+	.home-content h3 strong {
+		line-height: 1.2;
+	}
+}
+
 
 /*  */
