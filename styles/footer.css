@@ -56,3 +56,12 @@ footer .container {
 	border-color: #fff;
 	color: #1461ff;
 }
+
+/* Mobile Styles for footer Section */
+@media (max-width: 768px) {
+	.row {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+}

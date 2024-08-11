@@ -3,6 +3,8 @@
 	/* margin: 0 auto; */
 	background-color: #f4f4f4;
 	/* background-color: greenyellow; */
+
+	border-top: 1px solid #000;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -84,4 +86,18 @@
 
 .contact-form button:focus {
 	outline: none;
+}
+
+/* Mobile Styles for contact Section */
+@media (max-width: 768px) {
+	.contact-form {
+		display: none;
+	}
+
+	.contact-row {
+		display: flex;
+		flex-direction: column;
+		/* align-items: left; */
+		/* justify-content: flex-end; */
+	}
 }
