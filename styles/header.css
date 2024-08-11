@@ -2,7 +2,7 @@
 header {
 	background: transparent;
 	color: #fff;
-	padding: 1rem 0;
+	padding: 1.1rem 0;
 	position: absolute;
 	width: 100%;
 	top: 0;
@@ -137,8 +137,23 @@ nav a:hover::after {
 /* Mobile Styles */
 
 @media (max-width: 768px) {
+	.navbar-transparent {
+		background: #fff;
+	}
+
+	.navbar-transparent a {
+		color: #000;
+
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	}
+
+	.navbar-transparent h1 {
+		color: #000;
+	}
+
 	.hamburger {
 		display: block;
+		color: #000;
 	}
 
 	nav {
@@ -163,7 +178,14 @@ nav a:hover::after {
 
 	nav li {
 		margin: 0.5rem 0;
+		border-top: .5px solid #007bff;
+		padding-top: 5px;
 	}
+
+	/* 
+	nav li:not(:first-child) {
+		border-top: .5px solid #007bff;
+	} */
 
 	nav a {
 		color: #000;
@@ -264,6 +286,7 @@ section#home p {
 	section#home {
 		padding-left: 2rem;
 		text-align: center;
+		height: 60vh;
 		background-image:
 			linear-gradient(to right, #007bff, rgba(0, 0, 0, 0.2));
 	}
