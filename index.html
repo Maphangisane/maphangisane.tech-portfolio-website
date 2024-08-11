@@ -23,9 +23,10 @@
 			<h1>Thabang.</h1>
 			<button class="hamburger" id="hamburger">
 				<i class='bx bx-menu'></i>
+				<i class='bx bx-x' style="display: none;"></i>
 			</button>
 			<nav>
-				<ul>
+				<ul id="sidemenu">
 					<li><a href="#home">Home</a></li>
 					<li><a href="#about">About</a></li>
 					<li><a href="#portfolio">Portfolio</a></li>
@@ -68,14 +69,16 @@
 			<div class="about-content">
 				<img src="images/img3.jpg" alt="Profile Picture">
 				<div class="about-text">
-					<h3>Professional Software Developer with formal education, bootcamps, and
-						workplace Experience.</h3>
+					<h3>Professional Software Developer with formal education, bootcamp, and
+						workplace experience.</h3>
 					<p>Hi, I’m Thabang Hezekiel Maphangisane, a passionate software developer with a solid foundation in
 						computer science, thanks to my BSc in Mathematical Sciences. I
 						specialize in full-stack development, with a strong focus on building responsive web
 						applications and scalable backend systems.
-						<br>
-						<br>
+						<br><br>
+
+					</p>
+					<div id="extraContent" class="extra-content">
 						Currently, I am furthering my expertise through the ALX Holberton Full Stack Software
 						Engineering Programme, where I am specializing in Backend development. My technical skills span
 						a diverse range of programming languages and frameworks, including Java, Spring Boot,
@@ -100,8 +103,8 @@
 
 						I’m always eager to connect with like-minded professionals and explore new opportunities. Feel
 						free to reach out to me at maphangisane@gmail.com or connect with me on LinkedIn.
-					</p>
-
+					</div>
+					<button id="readMoreBtn" class="read-more-btn">Read More</button>
 					<!-- <a href="#" class="download-btn">Download Resume</a> -->
 				</div>
 			</div>
@@ -315,8 +318,9 @@
 					</div>
 				</div>
 
+				<!-- hide on small screen -->
 				<!-- Project #4 -->
-				<div class="portfolio-box" onclick="enlargeBox(this)">
+				<div id="extraPortfolioContent" class="portfolio-box" onclick="enlargeBox(this)">
 					<div class="img-box">
 						<img src="./images/bg3.jpg" alt="project4">
 					</div>
@@ -339,15 +343,19 @@
 							<div class="description">
 								<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, et! Error, illo
 									recusandae iure dolorem quidem tempore eligendi delectus, voluptates hic dolores
-									omnis veniam minima necessitatibus harum voluptas? Nesciunt amet sint placeat iste
+									omnis veniam minima necessitatibus harum voluptas? Nesciunt amet sint placeat
+									iste
 									architecto ut expedita eos aut. Iste fuga ex sed architecto expedita temporibus
-									similique deserunt corrupti sapiente incidunt!Lorem ipsum dolor sit amet consectetur
+									similique deserunt corrupti sapiente incidunt!Lorem ipsum dolor sit amet
+									consectetur
 									adipisicing elit. Excepturi, porro?</p><br>
 								<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, et! Error, illo
 									recusandae iure dolorem quidem tempore eligendi delectus, voluptates hic dolores
-									omnis veniam minima necessitatibus harum voluptas? Nesciunt amet sint placeat iste
+									omnis veniam minima necessitatibus harum voluptas? Nesciunt amet sint placeat
+									iste
 									architecto ut expedita eos aut. Iste fuga ex sed architecto expedita temporibus
-									similique deserunt corrupti sapiente incidunt!Lorem ipsum dolor sit amet consectetur
+									similique deserunt corrupti sapiente incidunt!Lorem ipsum dolor sit amet
+									consectetur
 									adipisicing elit. Excepturi, porro?</p>
 							</div>
 							<div class="skills">
@@ -378,7 +386,7 @@
 					</div>
 				</div>
 				<!-- Project #5 -->
-				<div class="portfolio-box" onclick="enlargeBox(this)">
+				<div id="extraPortfolioContent" class="portfolio-box" onclick="enlargeBox(this)">
 					<div class="img-box">
 						<img src="./images/bg3.jpg" alt="project5">
 					</div>
@@ -401,15 +409,19 @@
 							<div class="description">
 								<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, et! Error, illo
 									recusandae iure dolorem quidem tempore eligendi delectus, voluptates hic dolores
-									omnis veniam minima necessitatibus harum voluptas? Nesciunt amet sint placeat iste
+									omnis veniam minima necessitatibus harum voluptas? Nesciunt amet sint placeat
+									iste
 									architecto ut expedita eos aut. Iste fuga ex sed architecto expedita temporibus
-									similique deserunt corrupti sapiente incidunt!Lorem ipsum dolor sit amet consectetur
+									similique deserunt corrupti sapiente incidunt!Lorem ipsum dolor sit amet
+									consectetur
 									adipisicing elit. Excepturi, porro?</p><br>
 								<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, et! Error, illo
 									recusandae iure dolorem quidem tempore eligendi delectus, voluptates hic dolores
-									omnis veniam minima necessitatibus harum voluptas? Nesciunt amet sint placeat iste
+									omnis veniam minima necessitatibus harum voluptas? Nesciunt amet sint placeat
+									iste
 									architecto ut expedita eos aut. Iste fuga ex sed architecto expedita temporibus
-									similique deserunt corrupti sapiente incidunt!Lorem ipsum dolor sit amet consectetur
+									similique deserunt corrupti sapiente incidunt!Lorem ipsum dolor sit amet
+									consectetur
 									adipisicing elit. Excepturi, porro?</p>
 							</div>
 							<div class="skills">
@@ -440,7 +452,7 @@
 					</div>
 				</div>
 				<!-- Project #6 -->
-				<div class="portfolio-box" onclick="enlargeBox(this)">
+				<div id="extraPortfolioContent" class="portfolio-box" onclick="enlargeBox(this)">
 					<div class="img-box">
 						<img src="./images/bg3.jpg" alt="project6">
 					</div>
@@ -463,15 +475,19 @@
 							<div class="description">
 								<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, et! Error, illo
 									recusandae iure dolorem quidem tempore eligendi delectus, voluptates hic dolores
-									omnis veniam minima necessitatibus harum voluptas? Nesciunt amet sint placeat iste
+									omnis veniam minima necessitatibus harum voluptas? Nesciunt amet sint placeat
+									iste
 									architecto ut expedita eos aut. Iste fuga ex sed architecto expedita temporibus
-									similique deserunt corrupti sapiente incidunt!Lorem ipsum dolor sit amet consectetur
+									similique deserunt corrupti sapiente incidunt!Lorem ipsum dolor sit amet
+									consectetur
 									adipisicing elit. Excepturi, porro?</p><br>
 								<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, et! Error, illo
 									recusandae iure dolorem quidem tempore eligendi delectus, voluptates hic dolores
-									omnis veniam minima necessitatibus harum voluptas? Nesciunt amet sint placeat iste
+									omnis veniam minima necessitatibus harum voluptas? Nesciunt amet sint placeat
+									iste
 									architecto ut expedita eos aut. Iste fuga ex sed architecto expedita temporibus
-									similique deserunt corrupti sapiente incidunt!Lorem ipsum dolor sit amet consectetur
+									similique deserunt corrupti sapiente incidunt!Lorem ipsum dolor sit amet
+									consectetur
 									adipisicing elit. Excepturi, porro?</p>
 							</div>
 							<div class="skills">
@@ -501,6 +517,7 @@
 						</div>
 					</div>
 				</div>
+				<button id="viewMoreBtn" class="view-more-btn">View More</button>
 				<!--  -->
 
 			</div>
@@ -602,8 +619,54 @@
 	</footer>
 
 	<!-- <script src="/main.js"></script> -->
-	<!-- <script>
-		
-	</script> -->
+	<script>
+		// Toggle read more button
+		document.getElementById('readMoreBtn').addEventListener('click', function () {
+			var extraContent = document.getElementById('extraContent');
+			var readMoreBtn = document.getElementById('readMoreBtn');
+
+			if (extraContent.style.display === 'none') {
+				extraContent.style.display = 'block';
+				readMoreBtn.textContent = 'Read Less';
+			} else {
+				extraContent.style.display = 'none';
+				readMoreBtn.textContent = 'Read More';
+			}
+
+		});
+
+		// Toggle view more button
+		document.getElementById('viewMoreBtn').addEventListener('click', function () {
+			var extraPortfolioContent = document.getElementById('extraPortfolioContent');
+			var viewMoreBtn = document.getElementById('viewMoreBtn');
+
+			if (extraPortfolioContent.style.display === 'none') {
+				extraPortfolioContent.style.display = 'block';
+				viewMoreBtn.textContent = 'View Less';
+			} else {
+				extraPortfolioContent.style.display = 'none';
+				viewMoreBtn.textContent = 'View More';
+			}
+
+		});
+
+		// Toggle hamburger menu
+		document.getElementById('hamburger').addEventListener('click', function () {
+			const nav = document.querySelector('nav');
+			nav.classList.toggle('active');
+			const menuIcon = this.querySelector('.bx-menu');
+			const closeIcon = this.querySelector('.bx-x');
+
+			// Toggle the display of the hamburger and X icons
+			if (nav.classList.contains('active')) {
+				menuIcon.style.display = 'none';
+				closeIcon.style.display = 'block';
+			} else {
+				menuIcon.style.display = 'block';
+				closeIcon.style.display = 'none';
+			}
+		});
+
+	</script>
 
 </body>

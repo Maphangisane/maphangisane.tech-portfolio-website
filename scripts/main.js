@@ -67,3 +67,50 @@ function closeBox(event, button) {
   portfolioLayer.style.display = "flex";
   enlargedContent.style.display = "none";
 }
+
+	// Toggle read more button
+	document.getElementById('readMoreBtn').addEventListener('click', function () {
+		var extraContent = document.getElementById('extraContent');
+		var readMoreBtn = document.getElementById('readMoreBtn');
+
+		if (extraContent.style.display === 'none') {
+			extraContent.style.display = 'block';
+			readMoreBtn.textContent = 'Read Less';
+		} else {
+			extraContent.style.display = 'none';
+			readMoreBtn.textContent = 'Read More';
+		}
+
+	});
+
+	// Toggle view more button
+	document.getElementById('viewMoreBtn').addEventListener('click', function () {
+		var extraPortfolioContent = document.getElementById('extraPortfolioContent');
+		var viewMoreBtn = document.getElementById('viewMoreBtn');
+
+		if (extraPortfolioContent.style.display === 'none') {
+			extraPortfolioContent.style.display = 'block';
+			viewMoreBtn.textContent = 'View Less';
+		} else {
+			extraPortfolioContent.style.display = 'none';
+			viewMoreBtn.textContent = 'View More';
+		}
+
+	});
+
+	// Toggle hamburger menu
+	document.getElementById('hamburger').addEventListener('click', function () {
+		const nav = document.querySelector('nav');
+		nav.classList.toggle('active');
+		const menuIcon = this.querySelector('.bx-menu');
+		const closeIcon = this.querySelector('.bx-x');
+
+		// Toggle the display of the hamburger and X icons
+		if (nav.classList.contains('active')) {
+			menuIcon.style.display = 'none';
+			closeIcon.style.display = 'block';
+		} else {
+			menuIcon.style.display = 'block';
+			closeIcon.style.display = 'none';
+		}
+	});
