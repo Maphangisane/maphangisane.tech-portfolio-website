@@ -574,7 +574,7 @@
 					</div>
 				</div>
 
-				<form action="https://formspree.io/f/movawyen" method="POST" class="contact-form">
+				<form action="https://formspree.io/f/movawyen" method="POST" id="contactForm" class="contact-form">
 					<input type="text" name="name" placeholder="Name *" required>
 					<input type="email" name="email" placeholder="Email *" required>
 					<input type="text" name="subject" placeholder="Subject *" required>
@@ -582,7 +582,7 @@
 					<button type="submit">Send Message</button>
 				</form>
 				<!-- popup-message -->
-				<!-- <div id="popupMessage" class="popup-message">Message Sent Successfully!</div> -->
+				<div id="popupMessage" class="popup-message">Message Sent Successfully!</div>
 
 			</div>
 
@@ -672,34 +672,33 @@
 
 		// This script listens for the form submission, prevents the default action, 
 		// submits the form using Fetch, and shows the pop-up message if the submission is successful.
-		// document.getElementById('contactForm').addEventListener('submit', function (event) {
-		// 	event.preventDefault();
+		document.getElementById('contactForm').addEventListener('submit', function (event) {
+			event.preventDefault(); // Prevent default form submission
 
-		// 	const form = event.target;
-		// 	const formData = new FormData(form);
+			const form = event.target;
+			const formData = new FormData(form);
 
-		// 	fetch(form.action, {
-		// 		method: 'POST',
-		// 		body: formData,
-		// 		headers: {
-		// 			'Accept': 'application/json'
-		// 		}
-		// 	}).then(response => {
-		// 		if (response.ok) {
-		// 			document.getElementById('popupMessage').style.display = 'block';
-		// 			setTimeout(function () {
-		// 				// Hide pop-up after 3 seconds
-		// 				document.getElementById('popupMessage').style.display = 'none';
-		// 			}, 3000);
-		// 			form.reset();
-		// 		} else {
-		// 			alert('There was an issue sending your message. Please try again later.');
-		// 		}
-		// 	}).catch(error => {
-		// 		console.error('Error:', error);
-		// 		alert('There was an issue sending your message. Please try again later.');
-		// 	});
-		// });
+			fetch(form.action, {
+				method: 'POST',
+				body: formData,
+				headers: {
+					'Accept': 'application/json'
+				}
+			}).then(response => {
+				if (response.ok) {
+					document.getElementById('popupMessage').style.display = 'block'; // Show pop-up message
+					setTimeout(function () {
+						document.getElementById('popupMessage').style.display = 'none'; // Hide pop-up after 3 seconds
+						form.reset(); // Reset form fields
+					}, 3000);
+				} else {
+					alert('There was an issue sending your message. Please try again later.');
+				}
+			}).catch(error => {
+				console.error('Error:', error);
+				alert('There was an issue sending your message. Please try again later.');
+			});
+		});
 
 
 	</script>
