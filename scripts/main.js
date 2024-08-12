@@ -114,3 +114,34 @@ function closeBox(event, button) {
 			closeIcon.style.display = 'none';
 		}
 	});
+
+			// This script listens for the form submission, prevents the default action, 
+		// submits the form using Fetch, and shows the pop-up message if the submission is successful.
+		document.getElementById('contactForm').addEventListener('submit', function (event) {
+			event.preventDefault();
+
+			const form = event.target;
+			const formData = new FormData(form);
+
+			fetch(form.action, {
+				method: 'POST',
+				body: formData,
+				headers: {
+					'Accept': 'application/json'
+				}
+			}).then(response => {
+				if (response.ok) {
+					document.getElementById('popupMessage').style.display = 'block';
+					setTimeout(function () {
+						// Hide pop-up after 3 seconds
+						document.getElementById('popupMessage').style.display = 'none';
+					}, 3000);
+					form.reset();
+				} else {
+					alert('There was an issue sending your message. Please try again later.');
+				}
+			}).catch(error => {
+				console.error('Error:', error);
+				alert('There was an issue sending your message. Please try again later.');
+			});
+		});
