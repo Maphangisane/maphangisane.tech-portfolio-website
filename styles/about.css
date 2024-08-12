@@ -13,7 +13,8 @@ section#about .container {
 }
 
 .about-content img {
-	min-width: 400px;
+	/* min-width: 400px; */
+	width: auto;
 	border-radius: 10px;
 	margin: 2rem;
 }

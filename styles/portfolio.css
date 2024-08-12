@@ -9,7 +9,7 @@ section#portfolio .container {
 	grid-template-columns: repeat(3, 1fr);
 	align-items: center;
 	gap: 15px 20px;
-	padding: 40px;
+	/* padding: 40px; */
 }
 
 .portfolio-container .portfolio-box {

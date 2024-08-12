@@ -3,7 +3,6 @@
 	/* margin: 0 auto; */
 	background-color: #f4f4f4;
 	/* background-color: greenyellow; */
-
 	border-top: 1px solid #000;
 	display: flex;
 	flex-wrap: wrap;
@@ -23,7 +22,7 @@
 	justify-content: space-between;
 	margin-top: 20px;
 	width: 100%;
-	align-items: center;
+	/* align-items: center; */
 }
 
 .contact-info {
@@ -55,6 +54,7 @@
 }
 
 .contact-form {
+	/* display: none; */
 	width: 60%;
 	padding-left: 20px;
 }
@@ -90,6 +90,18 @@
 
 /* Mobile Styles for contact Section */
 @media (max-width: 768px) {
+	.contact-info {
+		width: 100%;
+	}
+
+	.contact-info div {
+		margin: 10px 0;
+	}
+
+	.contact-info div .content-header {
+		display: none;
+	}
+
 	.contact-form {
 		display: none;
 	}
